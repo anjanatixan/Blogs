@@ -17,7 +17,6 @@ class NewsRepo{
    Future<String> getNewslist() async {
     Map<String, String> headers = {
       "Content-Type": "application/json",
-     "Authorization": "Bearer ${"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzk1MjYzMjg4LCJpYXQiOjE3MDg4NjMyODgsImp0aSI6IjEzNTUzMjE5NWI5ODRmOTliZjUyOTEyZGRmODlkZWNmIiwidXNlcl9pZCI6MjF9.HUU-OfGaRHB0-_Sx9BYxVpgyPE_VHeS_hLRxlANQedI"}"
     };
 
     final response = await _service.getResponse(Urls.NEWS_BLOGS, headers);
